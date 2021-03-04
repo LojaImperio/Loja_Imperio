@@ -1,6 +1,9 @@
 # Doceria Dona Torta
 ## Desenvolvido por
 [![Laisy C. F. S.](https://avatars1.githubusercontent.com/u/44072239?s=64&v=4)](https://github.com/laisy) 
+|-------------------|-------------------
+| **Laisy C. F. S.** |
+<a href="https://github.com/laisy/Loja_Imperio/commits/master" title="Commits de @laisy">💻 @laisy</a> |
 ## Projeto de Engenharia de Software - 2020.4
 
 Implementação de um software para a disciplina de Engenharia de Software, no curso de Ciência da Computação na Universidade Federal do Agreste de Pernambuco - UFAPE. Estruturas desenvolvidas conforme orientação de Prof. Dr. Rodrigo Cardoso Amaral de Andrade.
