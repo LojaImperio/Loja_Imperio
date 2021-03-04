@@ -1,8 +1,6 @@
-# Doceria Dona Torta
+# Loja Império
 ## Desenvolvido por
-[![Laisy C. F. S.](https://avatars1.githubusercontent.com/u/44072239?s=64&v=4)](https://github.com/laisy) 
-|-------------------|-------------------
-| **Laisy C. F. S.** |
+[![Laisy C. F. S.](https://avatars1.githubusercontent.com/u/44072239?s=64&v=4)](https://github.com/laisy)
 <a href="https://github.com/laisy/Loja_Imperio/commits/master" title="Commits de @laisy">💻 @laisy</a> |
 ## Projeto de Engenharia de Software - 2020.4
 
