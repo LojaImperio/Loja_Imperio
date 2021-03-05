@@ -18,3 +18,4 @@ infantis. O sistema consiste em controle de estoque de mercadorias e vendas. O u
 - Controle de vendas
 
 ## URL heroku
+https://loja-imperio.herokuapp.com/
