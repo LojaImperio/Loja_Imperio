@@ -1,5 +1,6 @@
 # Loja Império
 ## Desenvolvido por
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0ea93e054cad4720a6d14d13999bf8f7)](https://app.codacy.com/gh/LojaImperio/Loja_Imperio?utm_source=github.com&utm_medium=referral&utm_content=LojaImperio/Loja_Imperio&utm_campaign=Badge_Grade_Settings)
 [![Laisy C. F. S.](https://avatars1.githubusercontent.com/u/44072239?s=64&v=4)](https://github.com/laisy)
 <a href="https://github.com/laisy/Loja_Imperio/commits/master" title="Commits de @laisy">💻 @laisy</a> |
 ## Projeto de Engenharia de Software - 2020.4
