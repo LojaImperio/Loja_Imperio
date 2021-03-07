@@ -6,5 +6,12 @@
   <%= link_to "Log In", login_path %>
 <% end %>
 <p id="notice"><%= notice %></p>
-<h1>Example</h1>
-<p>Lorem ipsum …</p>
+<h1> LOJA IMPÉRIO </h1>
+
+<% if current_user %>
+  <%= link_to 'Cadastrar um cliente', new_cliente_path %>
+  </br>
+  <%= link_to 'Cadastrar um produto', new_produto_path %>
+<% else %>
+  Você precisa logar para ter acesso.
+<% end %>
