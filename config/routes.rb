@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :vendas
   root 'home#index'
   
   resources :users
@@ -9,5 +10,6 @@ Rails.application.routes.draw do
 
   resources :clientes
   resources :produtos
+  resources :vendas
   
 end

@@ -5,4 +5,5 @@ class Produto < ApplicationRecord
     validates :subcategoria, presence: true
     validates :valor, numericality: true
     validates :tamanho, presence: true
+    has_one :cliente, :through => :vendas
 end
