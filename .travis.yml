@@ -15,5 +15,7 @@ script:
   - bundle exec rake db:migrate RAILS_ENV=test
   - bundle exec rails webpacker:compile
   - bundle exec rails test test/models/produto_test.rb
-  - bundle exec rails test test/models/cliente_test.rb  
-  #- bundle exec cucumber produto.feature
+  - bundle exec rails test test/models/cliente_test.rb
+  - bundle exec rails test test/models/user_test.rb
+  - bundle exec rails test test/models/venda_test.rb  
+  - bundle exec cucumber cliente.feature
