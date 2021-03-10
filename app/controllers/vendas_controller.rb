@@ -1,6 +1,6 @@
 class VendasController < ApplicationController
   before_action :set_venda, only: %i[ show edit update destroy ]
-
+  before_action :check_logado
   # GET /vendas or /vendas.json
   def index
     @vendas = Venda.all
@@ -25,7 +25,7 @@ class VendasController < ApplicationController
 
     respond_to do |format|
       if @venda.save
-        format.html { redirect_to @venda, notice: "Venda was successfully created." }
+        format.html { redirect_to @venda, notice: "SALE  was successfully created." }
         format.json { render :show, status: :created, location: @venda }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VendasController < ApplicationController
   def update
     respond_to do |format|
       if @venda.update(venda_params)
-        format.html { redirect_to @venda, notice: "Venda was successfully updated." }
+        format.html { redirect_to @venda, notice: "SALE  was successfully updated." }
         format.json { render :show, status: :ok, location: @venda }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class VendasController < ApplicationController
   def destroy
     @venda.destroy
     respond_to do |format|
-      format.html { redirect_to vendas_url, notice: "Venda was successfully destroyed." }
+      format.html { redirect_to vendas_url, notice: "SALE  was successfully destroyed." }
       format.json { head :no_content }
     end
   end

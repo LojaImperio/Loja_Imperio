@@ -1,5 +1,6 @@
 class ProdutosController < ApplicationController
   before_action :set_produto, only: %i[ show edit update destroy ]
+  before_action :check_logado
 
   # GET /produtos or /produtos.json
   def index
@@ -25,7 +26,7 @@ class ProdutosController < ApplicationController
 
     respond_to do |format|
       if @produto.save
-        format.html { redirect_to @produto, notice: "Produto was successfully created." }
+        format.html { redirect_to @produto, notice: "Product was successfully created." }
         format.json { render :show, status: :created, location: @produto }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +39,7 @@ class ProdutosController < ApplicationController
   def update
     respond_to do |format|
       if @produto.update(produto_params)
-        format.html { redirect_to @produto, notice: "Produto was successfully updated." }
+        format.html { redirect_to @produto, notice: "Product was successfully updated." }
         format.json { render :show, status: :ok, location: @produto }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +52,7 @@ class ProdutosController < ApplicationController
   def destroy
     @produto.destroy
     respond_to do |format|
-      format.html { redirect_to produtos_url, notice: "Produto was successfully destroyed." }
+      format.html { redirect_to produtos_url, notice: "Product was successfully destroyed." }
       format.json { head :no_content }
     end
   end
