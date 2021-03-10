@@ -12,20 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :valorTotal %>
+    <%= form.label :Total_Price %>
     <%= form.text_field :valorTotal %>
-  </div>
+  </div> <br />
 
   <div class="field">
-    <%= form.label :produto_id %>
+    <%= form.label :Id_Product %>
     <%= form.text_field :produto_id %>
-  </div>
+  </div> <br />
+
+  # <% @produtos.each do |produto| %>
+      #<%= check_box_tag "produto_id[]", produto.id %> 
+      #<%= produto.descricao %> <br />
+    # <% end %>
 
   <div class="field">
-    <%= form.label :cliente_id %>
+    <%= form.label :Id_Costumer %>
     <%= form.text_field :cliente_id %>
   </div>
 
+  <br />
   <div class="actions">
     <%= form.submit %>
   </div>

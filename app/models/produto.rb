@@ -6,4 +6,5 @@ class Produto < ApplicationRecord
     validates :valor, numericality: true
     validates :tamanho, presence: true
     has_one :cliente, :through => :vendas
+    has_many :vendas
 end

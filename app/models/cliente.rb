@@ -3,4 +3,5 @@ class Cliente < ApplicationRecord
     validates :nome, presence: true, length: {minimum: 3}
     validates :telefone, numericality: { only_integer: true }
     has_many :produtos, :through => :vendas
+    has_many :vendas
 end

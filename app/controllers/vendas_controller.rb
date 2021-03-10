@@ -13,6 +13,8 @@ class VendasController < ApplicationController
   # GET /vendas/new
   def new
     @venda = Venda.new
+    @produtos = Produto.all
+  
   end
 
   # GET /vendas/1/edit
@@ -22,10 +24,12 @@ class VendasController < ApplicationController
   # POST /vendas or /vendas.json
   def create
     @venda = Venda.new(venda_params)
-
+    #produtos_ids = params[:venda].collect {|id| id.to_i} if params[:venda]
+    #@venda.push(produtos_ids)
+    #@produtos = Produto.all
     respond_to do |format|
       if @venda.save
-        format.html { redirect_to @venda, notice: "SALE  was successfully created." }
+        format.html { redirect_to @venda, notice: "SALE was successfully created." }
         format.json { render :show, status: :created, location: @venda }
       else
         format.html { render :new, status: :unprocessable_entity }
