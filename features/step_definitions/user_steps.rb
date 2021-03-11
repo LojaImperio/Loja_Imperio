@@ -5,6 +5,6 @@ When ("I create an user with email {string} and password {string} and password c
 
 end
 
-Then("I see the user with email {string} is properly created") do 
-    
+Then("I see the user with email {string} is properly created") do |email|
+
 end
