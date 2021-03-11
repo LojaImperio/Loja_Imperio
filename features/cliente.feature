@@ -8,4 +8,4 @@ Feature: Cliente
         Given I am logged_in
         When I create a cliente with cpf "12345678923" and nome "Ana" and telefone "999214578"
         When I click create cliente
-        Then I see the cliente with cpf "12345678923" is properly created
+        Then I see a message "Costumer was successfully created."

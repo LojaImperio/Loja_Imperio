@@ -10,6 +10,6 @@ end
 When("I click create cliente")  do 
     clik_button 'submit'
 end
-Then("I see the cliente with cpf {string} is properly created") do |cpf|
-    expect(page).to have_content(cpf)
+Then("I see a message {string}") do |message|
+    expect(page).to have_content(message)
 end 

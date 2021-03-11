@@ -18,4 +18,5 @@ script:
   - bundle exec rails test test/models/cliente_test.rb
   - bundle exec rails test test/models/user_test.rb
   - bundle exec rails test test/models/venda_test.rb  
- # - bundle exec cucumber cliente.feature
+  - bundle exec cucumber cliente.feature
+  - bundle exec cucumber user.feature

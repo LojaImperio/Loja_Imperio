@@ -7,6 +7,7 @@ Feature: User
 
     Given I am at create user page
     When I create an user with email "ana@email.com" and password "123456" and password confirmation "123456"
-    Then I see the user with email "ana@email.com" is properly created
+    When I click create user
+    Then I see a message "User was successfully created."
 
 
