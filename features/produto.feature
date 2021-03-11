@@ -19,6 +19,15 @@ Feature: Produto
         When I click create produto
         Then I see a message "Descricao can't be blank"
 
-   
+    Scenario: editing produto correctly
+
+        Given I am logged_in
+        And I am at create produto page
+        When I create a produto with descricao "blusa" and quantidade "2" and categoria "adulto" and subcategoria "feminina" and valor "19.90" and tamanho "P"
+        And I click create produto
+        And I am at edit produto page
+        And I edit a produto with descricao "Camisa" and quantidade "2" and categoria "adulto" and subcategoria "feminina" and valor "19.90" and tamanho "P"
+        And I click edit produto
+        Then I see a message "Product was successfully updated."
 
 
