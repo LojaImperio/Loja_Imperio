@@ -30,3 +30,14 @@ end
 When("I click create venda")  do 
     click_button 'submit'
 end
+Given("I am at edit venda page") do
+    click_link 'Edit'
+end
+When("I edit a venda with valorTotal {string} and produto_id {string} and cliente_id {string}") do |valorTotal, produto_id, cliente_id|
+    fill_in 'venda[valorTotal]', :with => valorTotal
+    fill_in 'venda[produto_id]', :with => produto_id
+    fill_in 'venda[cliente_id]', :with => cliente_id
+end
+When("I click edit venda")  do 
+    click_button 'submit'
+end
