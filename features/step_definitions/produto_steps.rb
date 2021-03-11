@@ -1,15 +1,3 @@
-Given ("I am logged_in") do 
-    visit "/signup"
-    fill_in 'user[email]', :with => "patricia@email.com"
-    fill_in 'user[password]', :with => "123456"
-    fill_in 'user[password_confirmation]', :with => "123456"
-    click_button 'submit'
-    visit "/login"
-    fill_in 'email', :with => "patricia@email.com"
-    fill_in 'password', :with => "123456"
-    click_button 'Login'
-
-end
 Given("I am at create produto page") do
     click_link 'New product'
 end
@@ -24,6 +12,3 @@ end
 When("I click create produto")  do 
     click_button 'submit'
 end
-Then("I see a message {string}") do |message|
-    expect(page).to have_content(message)
-end 
