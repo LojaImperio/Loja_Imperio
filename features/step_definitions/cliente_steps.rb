@@ -1,5 +1,5 @@
 Given("I open root page") do
-    visit "clientes/new"
+    visit "/login"
     expect(page).to have_content('New cliente')
 end
 When(I create an cliente with cpf {integer} and nome {string} and telefone {integer}) do |cpf, nome, telefone|

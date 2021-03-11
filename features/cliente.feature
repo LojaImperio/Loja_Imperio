@@ -5,7 +5,7 @@ Feature: Cliente
 
     Scenario: creating new cliente correctly
 
-        Given I open root page
-        When I create an cliente with cpf "12345678923" and nome "Ana" and telefone "999214578"
+        Given I am logged_in
+        When I create a cliente with cpf "12345678923" and nome "Ana" and telefone "999214578"
         When I click create cliente
         Then I see the cliente with cpf "12345678923" is properly created
