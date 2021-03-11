@@ -8,7 +8,6 @@ Given ("I am logged_in") do
     fill_in 'email', :with => "patricia@email.com"
     fill_in 'password', :with => "123456"
     click_button 'Login'
-
 end
 Given("I am at create cliente page") do
     click_link 'New customer'
