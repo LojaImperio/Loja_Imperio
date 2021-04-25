@@ -51,6 +51,7 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'rspec'
   gem 'database_cleaner'
+  gem 'rspec-rails', '~> 4.0.0'
 end
 
 group :production do
