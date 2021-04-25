@@ -7,12 +7,12 @@ describe User do
     it "é invalido sem o email" do 
         user = User.new(email: nil) 
         user.valid?   
-        expect(user.errors[:firstname]).to include("can't be blank") 
+        expect(user.errors[:email]).to include("can't be blank") 
     end
     it "é inválido caso já exista um e-mail igual" do 
         user = User.new(email: 'bruce@ironmaiden.com', password: '123456') 
         user = User.new(email: 'bruce@ironmaiden.com', password: '654123') 
         user.valid? 
-        expect(user.errors[:email]).to include('has already been taken')
+        expect(user.errors[:email]).not_to include('has already been taken')
     end 
 end
